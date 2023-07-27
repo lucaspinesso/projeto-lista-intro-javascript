@@ -63,8 +63,10 @@ function retornaStringEmMaiuscula(string) {
 
 // EXERCÍCIO 07
 function calculaIngressosEspetaculo(custo, valorIngresso) {
-  // implemente sua lógica aqui
-
+  let quantIngresso = (custo/valorIngresso)
+  let arredondamento = Number(quantIngresso.toFixed(0))
+  
+  return arredondamento
 }
 
 // EXERCÍCIO 08
