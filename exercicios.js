@@ -18,7 +18,7 @@ function imprimeMensagem() {
 
 // EXERCÍCIO 01
 function calculaAreaRetangulo() {
-  let altura = Number(prompt("Olá, vamos calcular a área so seu retângulo? "+"Insira a altura do seu retângulo:"))
+  let altura = Number(prompt("Olá, vamos calcular a área so seu retângulo?\nInsira a altura do seu retângulo:"))
   let largura = Number(prompt("Agora insira a largura:")) 
 
   console.log(altura * largura)
@@ -26,7 +26,7 @@ function calculaAreaRetangulo() {
 
 // EXERCÍCIO 02
 function imprimeIdade() {
-  let anoatual = Number(prompt("Olá, vamos calcular a sua idade? "+"Insira o ano atual:"))
+  let anoatual = Number(prompt("Olá, vamos calcular a sua idade?\nInsira o ano atual:"))
   let anodenascimento = Number(prompt("Agora insira o ano de seu nascimento:"))
 
   console.log(anoatual - anodenascimento)
@@ -43,7 +43,7 @@ function imprimeInformacoesUsuario() {
   let idade = Number(prompt("Qual a sua idade?"))
   const email = prompt("Qual o seu e-mail?")
 
-  console.log("Meu nome é "+nome+", tenho "+idade+" anos, e o meu email é "+email+".")
+  console.log(`Meu nome é ${nome}, tenho ${idade} anos, e o meu email é ${email}.`)
 }
 
 // EXERCÍCIO 05
@@ -58,8 +58,7 @@ function imprimeTresCoresFavoritas() {
 
 // EXERCÍCIO 06
 function retornaStringEmMaiuscula(string) {
-  // implemente sua lógica aqui
-
+  return string.toUpperCase()
 }
 
 // EXERCÍCIO 07
