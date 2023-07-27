@@ -18,21 +18,17 @@ function imprimeMensagem() {
 
 // EXERCÍCIO 01
 function calculaAreaRetangulo() {
-  let altura = Number(prompt("Olá, vamos calcular a área so seu retângulo?"+" "+"Insira a altura do seu retângulo:"))
+  let altura = Number(prompt("Olá, vamos calcular a área so seu retângulo? "+"Insira a altura do seu retângulo:"))
   let largura = Number(prompt("Agora insira a largura:")) 
 
-  console.log(altura)
-  console.log(largura)
   console.log(altura * largura)
 }
 
 // EXERCÍCIO 02
 function imprimeIdade() {
-  let anoatual = Number(prompt("Olá, vamos calcular a sua idade?"+" "+"Insira o ano atual:"))
+  let anoatual = Number(prompt("Olá, vamos calcular a sua idade? "+"Insira o ano atual:"))
   let anodenascimento = Number(prompt("Agora insira o ano de seu nascimento:"))
 
-  console.log(anoatual)
-  console.log(anodenascimento)
   console.log(anoatual - anodenascimento)
 }
 
@@ -43,9 +39,11 @@ function calculaIMC(peso, altura) {
 
 // EXERCÍCIO 04
 function imprimeInformacoesUsuario() {
-  // implemente sua lógica aqui
-  // "Meu nome é NOME, tenho IDADE anos, e o meu email é EMAIL."
+  const nome = prompt("Olá, qual é o seu nome?")
+  let idade = Number(prompt("Qual a sua idade?"))
+  const email = prompt("Qual o seu e-mail?")
 
+  console.log("Meu nome é "+nome+", tenho "+idade+" anos, e o meu email é "+email+".")
 }
 
 // EXERCÍCIO 05
