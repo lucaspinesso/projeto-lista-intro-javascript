@@ -84,8 +84,10 @@ function retornaPrimeiroElemento(array) {
 
 // EXERCÍCIO 10
 function retornaUltimoElemento(array) {
-  // implemente sua lógica aqui
+  let numeroElementos = array.length
+  let ultimoElemento = Number(numeroElementos - 1)
 
+  return array[ultimoElemento]
 }
 
 // EXERCÍCIO 11
