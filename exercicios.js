@@ -110,8 +110,23 @@ function checaIgualdadeDesconsiderandoCase(string1, string2) {
 
 // EXERCÍCIO 13
 function checaRenovacaoRG() {
-  // implemente sua lógica aqui
+  let anoAtual = Number(prompt("Vamos verificar se seu RG precisa ser renovado?\nInsira o ano atual:"))
+  let anoNascimento = Number(prompt("Agora insira o ano do seu nascimento:"))
+  let anoEmissao = Number(prompt("E por fim, o ano de emissão de sua carteira de identidade:"))
+  let idade = Number(anoAtual - anoNascimento)
+  let vencimento = Number(anoAtual - anoEmissao)
 
+  const menoresde21 = String(idade <= 20)
+  const entre21e51 = String((idade <= 50) && (idade > 20))
+  const maioresde50 = String(idade > 50)
+
+  const renova1 = String((menoresde21 == "true") && (vencimento >= 5))
+  const renova2 = String((entre21e51 == "true") && (vencimento >= 10))
+  const renova3 = String((maioresde50 == "true") && (vencimento >= 15))
+
+  const resposta = ((renova1 == "true") || (renova2 == "true") || (renova3 == "true"))
+
+  console.log(resposta)
 }
 
 // EXERCÍCIO 14
