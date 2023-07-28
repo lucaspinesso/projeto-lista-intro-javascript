@@ -145,6 +145,13 @@ function checaAnoBissexto(ano) {
 
 // EXERCÍCIO 15
 function checaValidadeInscricaoLabenu() {
-  // implemente sua lógica aqui
+  const maiordeIdade = String(prompt("Verificando a validade de sua inscrição na Labenu:\nVocê tem mais de 18 anos?"))
+  const escolaridade = String(prompt("Você possui ensino médio completo?"))
+  const disponibilidade = String(prompt("Você possui disponibilidade exclusiva durante os horários do curso?"))
 
+  const Maiuscula1 = maiordeIdade.toUpperCase()
+  const Maiuscula2 = escolaridade.toUpperCase()
+  const Maiuscula3 = disponibilidade.toUpperCase()
+  
+  console.log((Maiuscula1 == "SIM") && (Maiuscula2 == "SIM") && (Maiuscula3 == "SIM"))
 }
