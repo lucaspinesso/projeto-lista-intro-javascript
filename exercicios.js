@@ -131,8 +131,16 @@ function checaRenovacaoRG() {
 
 // EXERCÍCIO 14
 function checaAnoBissexto(ano) {
-  // implemente sua lógica aqui
+  const multiplo400 = String((ano%400) == 0)
+  const multiplo4 = String((ano%4) == 0)
+  const multiplo100 = String((ano%100) == 0)
 
+  const testedo100 = String((multiplo100 == "true") && (multiplo400 == "false"))
+  const testedo4 = String((multiplo4 == "true") && (testedo100 == "false"))
+
+  const resposta = (multiplo400 == "true") || (testedo4 == "true")
+
+  return resposta
 }
 
 // EXERCÍCIO 15
